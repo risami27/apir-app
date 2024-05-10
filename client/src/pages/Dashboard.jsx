@@ -205,7 +205,7 @@ const Dashboard = ({ setSignInOpen }) => {
             </Podcasts>
           </FilterContainer>
           <FilterContainer>
-            <Topic>Comedy
+            <Topic>Pop
               <Link to={`/showpodcasts/comedy`} style={{ textDecoration: "none" }}>
                 <Span>Show All</Span>
               </Link>
@@ -216,42 +216,8 @@ const Dashboard = ({ setSignInOpen }) => {
               ))}
             </Podcasts>
           </FilterContainer>
-          <FilterContainer>
-            <Link to={`/showpodcasts/news`} style={{ textDecoration: "none" }}>
-              <Topic>News
-                <Span>Show All</Span>
-              </Topic>
-            </Link>
-            <Podcasts>
-              {news.slice(0, 10).map((podcast) => (
-                <PodcastCard podcast={podcast} user={user} setSignInOpen={setSignInOpen} />
-              ))}
-            </Podcasts>
-          </FilterContainer>
-          <FilterContainer>
-            <Link to={`/showpodcasts/crime`} style={{ textDecoration: "none" }}>
-              <Topic>Crime
-                <Span>Show All</Span>
-              </Topic>
-            </Link>
-            <Podcasts>
-              {crime.slice(0, 10).map((podcast) => (
-                <PodcastCard podcast={podcast} user={user} setSignInOpen={setSignInOpen} />
-              ))}
-            </Podcasts>
-          </FilterContainer>
-          <FilterContainer>
-            <Link to={`/showpodcasts/sports`} style={{ textDecoration: "none" }}>
-              <Topic>Sports
-                <Span>Show All</Span>
-              </Topic>
-            </Link>
-            <Podcasts>
-              {sports.slice(0, 10).map((podcast) => (
-                <PodcastCard podcast={podcast} user={user} setSignInOpen={setSignInOpen} />
-              ))}
-            </Podcasts>
-          </FilterContainer>
+          
+          
         </>
       }
     </DashboardMain>

@@ -101,7 +101,7 @@ const Menu = ({ setMenuOpen, darkMode, setDarkMode, setUploadOpen }) => {
                 <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
                     <Logo>
                         <Image src={LogoIcon} />
-                        PODSTREAM
+                        APIR APP
                     </Logo>
                 </Link>
                 <Close>

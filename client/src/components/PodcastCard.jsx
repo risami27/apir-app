@@ -201,22 +201,22 @@ export const PodcastCard = ({ podcast, user, setSignInOpen }) => {
               }
             </Favorite>
           </Link>
-          <CardImage src={podcast.thumbnail} />
+          <CardImage src="https://assets.entrepreneur.com/content/3x2/2000/20190211153655-GettyImages-1024882748.jpeg" />
         </Top>
         <CardInformation>
           <MainInfo>
-            <Title>{podcast.name}</Title>
-            <Description>{podcast.desc}</Description>
+            <Title>FOCUSED</Title>
+            <Description>Stay focused and believe in yourself. Every step forward is progress, no matter how small. Challenges are opportunities to learn and grow. Keep pushing forward with determination—you've got this!</Description>
             <CreatorInfo>
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <Avatar
-                  src={podcast.creator.img} style={{ width: '26px', height: '26px' }}>{podcast.creator.name?.charAt(0).toUpperCase()}</Avatar>
+                  src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-6/438264009_1161769071535061_7567805936109204556_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHlS2E_3rQtqSGi0kx0AdFMgnctJcHtzjqCdy0lwe3OOj5nmOs1dttCp7d_nLKRZDhGtWw1IzDh9zyeXHFVdej-&_nc_ohc=VQb7tpq-ol4Q7kNvgFyt9BE&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYCnbuOMTyub2ZhYnl96FAWfXyIJ0fnNytcgZtjWE17f8g&oe=664430C0" style={{ width: '26px', height: '26px' }}>{podcast.creator.name?.charAt(0).toUpperCase()}</Avatar>
                 <CreatorName>
-                  {podcast.creator.name}
+                  rismi
                 </CreatorName>
 
               </div>
-              <Views>• {podcast.views} Views</Views>
+              <Views>• 10000 Views</Views>
             </CreatorInfo>
           </MainInfo>
         </CardInformation>

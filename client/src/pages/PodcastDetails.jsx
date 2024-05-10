@@ -260,24 +260,24 @@ const PodcastDetails = () => {
             </Favorite>
           </div>
           <Top>
-            <Image src={podcast?.thumbnail} />
+            <Image src="https://w0.peakpx.com/wallpaper/789/711/HD-wallpaper-focus-motivational-quote-motivation-thumbnail.jpg" />
             <Details>
-              <Title>{podcast?.name}
+              <Title>FOCUSED
               </Title>
-              <Description>{podcast?.desc}</Description>
+              <Description>Stay focused and believe in yourself. Every step forward is progress, no matter how small. Challenges are opportunities to learn and grow. Keep pushing forward with determination—you've got this!</Description>
               <Tags>
                 {podcast?.tags.map((tag) => (
-                  <Tag>{tag}</Tag>
+                  <Tag>Inspirational</Tag>
                 ))}
               </Tags>
               <CreatorContainer>
                 <CreatorDetails>
-                  <Avatar src={podcast?.creator?.img} sx={{ width: "26px", height: "26px" }}>{podcast?.creator?.name.charAt(0).toUpperCase()}</Avatar>
-                  <Creator>{podcast?.creator?.name}</Creator>
+                  <Avatar src="https://scontent.fcgy2-2.fna.fbcdn.net/v/t39.30808-6/438264009_1161769071535061_7567805936109204556_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHlS2E_3rQtqSGi0kx0AdFMgnctJcHtzjqCdy0lwe3OOj5nmOs1dttCp7d_nLKRZDhGtWw1IzDh9zyeXHFVdej-&_nc_ohc=VQb7tpq-ol4Q7kNvgFyt9BE&_nc_ht=scontent.fcgy2-2.fna&oh=00_AYCnbuOMTyub2ZhYnl96FAWfXyIJ0fnNytcgZtjWE17f8g&oe=664430C0" sx={{ width: "26px", height: "26px" }}>{podcast?.creator?.name.charAt(0).toUpperCase()}</Avatar>
+                  <Creator>rismi</Creator>
                 </CreatorDetails>
-                <Views>• {podcast?.views} Views</Views>
+                <Views>• 10000 Views</Views>
                 <Views>
-                  • {format(podcast?.createdAt)}
+                  • 2 days
                 </Views>
                 <Icon>
                   {podcast?.type === "audio" ?
@@ -289,14 +289,7 @@ const PodcastDetails = () => {
               </CreatorContainer>
             </Details>
           </Top>
-          <Episodes>
-            <Topic>All Episodes</Topic>
-            <EpisodeWrapper>
-              {podcast?.episodes.map((episode, index) => (
-                <Episodecard episode={episode} podid={podcast} type={podcast.type} user={user} index={index} />
-              ))}
-            </EpisodeWrapper>
-          </Episodes>
+         
         </>
       }
     </Container >
