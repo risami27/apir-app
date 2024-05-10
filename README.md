@@ -14,7 +14,6 @@
 
 ## Podcast Streaming Application
 
-### Deployed Link : [View Webapp](https://podstream.netlify.app/)
 
 ### This is a web application for streaming podcasts with the following features:
 - User authentication
